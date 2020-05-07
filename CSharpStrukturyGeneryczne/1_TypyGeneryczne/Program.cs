@@ -10,6 +10,9 @@ namespace _1_TypyGeneryczne
     {
         static void Main(string[] args)
         {
+            double x;
+            x = 4 % 5;
+            KolejkaKolowa kol = new KolejkaKolowa(5);
         }
     }
 }
