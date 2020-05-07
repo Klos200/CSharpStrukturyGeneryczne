@@ -6,6 +6,7 @@
         private int poczatekBufora;
         private int koniecBufora;
 
+        //Konstruktory
         public KolejkaKolowa() : this(pojemnosc: 5)
         {
 
@@ -16,10 +17,11 @@
             poczatekBufora = 0;
             koniecBufora = 0; 
         } 
+        //Metody
         public void Zapisz(double wartosć)
         {
-            bufor[koniecBufora] = wartosć;
-            koniecBufora = (koniecBufora + 1) % bufor.Length;
+            bufor[koniecBufora] = wartosć; //0 - 1; 1 - 2; 2 - 3 ; 3
+            koniecBufora = (koniecBufora + 1) % bufor.Length;// po pierwszym obiegu =1, po drugim = 2, pod trzecim =3 
             if (koniecBufora == poczatekBufora)
                 poczatekBufora = (poczatekBufora + 1) % bufor.Length;
         }
@@ -30,7 +32,7 @@
             poczatekBufora = (poczatekBufora + 1) % bufor.Length;
             return wynik;
         }
-        //właściwośc
+        //właściwości
         public int Pojemonosc
         {
             get
