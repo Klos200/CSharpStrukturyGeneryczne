@@ -1,6 +1,6 @@
 ﻿namespace _1_TypyGeneryczne
 {
-    class KolejkaKolowa
+    public class KolejkaKolowa
     {
         private double[] bufor;
         private int poczatekBufora;
