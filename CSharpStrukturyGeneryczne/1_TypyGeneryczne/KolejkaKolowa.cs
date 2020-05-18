@@ -1,8 +1,8 @@
 ﻿namespace _1_TypyGeneryczne
 {
-    public class KolejkaKolowa
+    public class KolejkaKolowa<T>
     {
-        private double[] bufor;
+        private T[] bufor;
         private int poczatekBufora;
         private int koniecBufora;
 
@@ -13,20 +13,20 @@
         }
         public KolejkaKolowa(int pojemnosc)
         {
-            bufor = new double[pojemnosc + 1];
+            bufor = new T[pojemnosc + 1];
             poczatekBufora = 0;
             koniecBufora = 0; 
         } 
         //Metody
-        public void Zapisz(double wartosć)
+        public void Zapisz(T wartosc)
         {
-            bufor[koniecBufora] = wartosć; //0 - 1; 1 - 2; 2 - 3 ; 3
-            koniecBufora = (koniecBufora + 1) % bufor.Length;// po pierwszym obiegu =1, po drugim = 2, pod trzecim =3 
+            bufor[koniecBufora] = wartosc; //0 - 1; 1 - 2; 2 - 3 ; 3
+            koniecBufora = (koniecBufora + 1) % bufor.Length; // po pierwszym obiegu =1, po drugim = 2, pod trzecim =3 
             if (koniecBufora == poczatekBufora)
                 poczatekBufora = (poczatekBufora + 1) % bufor.Length;
         }
 
-        public double Czytaj()
+        public T Czytaj()
         {
             var wynik = bufor[poczatekBufora];
             poczatekBufora = (poczatekBufora + 1) % bufor.Length;
