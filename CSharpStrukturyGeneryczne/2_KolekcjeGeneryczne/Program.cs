@@ -12,6 +12,13 @@ namespace _2_KolekcjeGeneryczne
             kolejka.Enqueue(new Pracownik { Imie = "Jan", Nazwisko = "Janowski" });
             kolejka.Enqueue(new Pracownik { Imie = "Jacek", Nazwisko = "Kowalski" });
             kolejka.Enqueue(new Pracownik { Imie = "Ola", Nazwisko = "Kaczor" });
+
+            while(kolejka.Count > 0)
+            {
+                var pracownik = kolejka.Dequeue();
+                Console.WriteLine(pracownik.Nazwisko+" "+pracownik.Imie);
+            }
+            
         }
     }
 }

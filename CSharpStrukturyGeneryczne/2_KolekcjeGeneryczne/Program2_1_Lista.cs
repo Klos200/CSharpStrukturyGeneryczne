@@ -8,7 +8,7 @@ namespace _2_KolekcjeGeneryczne
 {
     class Program2_1_Lista
     {
-        static void Main(string[] args)
+        static void Test2(string[] args)
         {
             List<Pracownik> pracownicy = new List<Pracownik>
             {
@@ -29,17 +29,15 @@ namespace _2_KolekcjeGeneryczne
 
             var liczby = new List<int>();
             var pojemnosc = -1;
-            while (true)
-            {
-                if (liczby.Capacity != pojemnosc)
-                {
-                    pojemnosc = liczby.Capacity;
-                    Console.WriteLine(pojemnosc);
-                }
-                liczby.Add(1);
-
-
-            }
+            //while (true)
+            //{
+            //    if (liczby.Capacity != pojemnosc)
+            //    {
+            //        pojemnosc = liczby.Capacity;
+            //        Console.WriteLine(pojemnosc);
+            //    }
+            //    liczby.Add(1);
+            //}
 
         }
     }

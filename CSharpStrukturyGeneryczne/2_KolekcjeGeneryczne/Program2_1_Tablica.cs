@@ -5,7 +5,7 @@ namespace _2_KolekcjeGeneryczne
 {
     class Program2_1_Tablica
     {
-        static void Main(string[] args)
+        static void Test(string[] args)
         {
             Pracownik[] pracownicy = new Pracownik[]
             {
