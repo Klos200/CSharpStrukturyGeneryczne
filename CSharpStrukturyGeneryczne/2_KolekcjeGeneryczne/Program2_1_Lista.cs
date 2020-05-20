@@ -8,7 +8,7 @@ namespace _2_KolekcjeGeneryczne
 {
     class Program2_1_Lista
     {
-        static void Test2(string[] args)
+        static void Main_lista(string[] args)
         {
             List<Pracownik> pracownicy = new List<Pracownik>
             {
